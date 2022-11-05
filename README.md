@@ -1,5 +1,4 @@
 # Mapuche77.github.io
-<!DOCTYPE html>
 <html>
     <header>
         <link rel="stylesheet" type="text/css" href="style.css">
