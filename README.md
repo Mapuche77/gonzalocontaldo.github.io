@@ -11,8 +11,7 @@
         <div id="banner">
             <!-- Add your animation here -->
         </div>
-    </header>
-    
+    </header>    
     <nav>
         <ul>
             <li><a href="#about">About</a></li>
@@ -20,7 +19,6 @@
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
-    
     <section id="about">
         <div class="container">
             <h2>About Me</h2>
@@ -43,14 +41,12 @@
             <!-- Add more projects as needed -->
         </div>
     </section>
-    
     <section id="contact">
         <div class="container">
             <h2>Contact Me</h2>
             <p>Contact information and a contact form go here.</p>
         </div>
     </section>
-
     <footer>
         <div class="container">
             <p>&copy; 2023 Your Name</p>
