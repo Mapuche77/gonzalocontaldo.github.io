@@ -27,7 +27,6 @@
             <p>Your introduction and bio go here.</p>
         </div>
     </section>
-    
     <section id="projects">
         <div class="container">
             <h2>My Projects</h2>
