@@ -1,11 +1,13 @@
+/* Reset some default styles */
 body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
+    background-color: #F5EEC8; /* Background color for the entire page */
 }
 
 .navbar {
-    background-color: #333;
+    background-color: #A7D397;
     position: fixed;
     top: 0;
     left: 0;
@@ -14,11 +16,11 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    z-index: 1; /* Ensures the navbar is above the content */
+    z-index: 1;
 }
 
-.logo img {
-    width: 50px; /* Adjust the width of your logo as needed */
+.navbar .logo img {
+    width: 50px;
 }
 
 .nav-links {
@@ -27,11 +29,32 @@ body {
 }
 
 .nav-links li {
-    margin-right: 20px; /* Adjust the spacing between links */
+    margin-right: 20px;
 }
 
 .nav-links a {
     text-decoration: none;
-    color: #fff;
+    color: #555843; /* Link text color */
     font-weight: bold;
+}
+
+.header {
+    margin-top: 100px;
+    text-align: center;
+    background-color: #D0D4CA; /* Background color for the header */
+    padding: 20px; /* Adjust the padding as needed */
+}
+
+#sketch-holder {
+    text-align: center;
+}
+
+.projects {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.projects h2 {
+    font-size: 1.5em;
+    color: #555843; /* Header text color */
 }
