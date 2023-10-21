@@ -58,3 +58,20 @@ body {
     font-size: 1.5em;
     color: #555843; /* Header text color */
 }
+
+.bio {
+    text-align: center;
+    margin-top: 20px;
+    background-color: #F5EEC8; /* Background color for the bio section */
+    padding: 20px; /* Adjust the padding as needed */
+}
+
+.bio h2 {
+    font-size: 1.5em;
+    color: #555843; /* Header text color for the bio section */
+}
+
+.bio p {
+    font-size: 1em;
+    color: #333; /* Text color for the bio section */
+}
