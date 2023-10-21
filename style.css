@@ -40,23 +40,22 @@ ul.navbar {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    background-color: #bbb;
-    text-align: center;
+    background-color: #333;
+    text-align: right; /* Align items to the right */
 }
 
 ul.navbar li {
     display: inline;
-    margin-right: 20px;
+    margin-left: 20px; /* Add padding to the left of each item */
 }
 
 ul.navbar li a {
     text-decoration: none;
     color: #fff;
     font-weight: bold;
-    padding: 10;
+    padding: 10px 20px; /* Add padding to the top and bottom (10px) and left and right (20px) of each item */
 }
 
 ul.navbar li a:hover {
     text-decoration: underline;
 }
-
