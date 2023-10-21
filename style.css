@@ -39,7 +39,7 @@ h2 {
 ul.navbar {
     list-style-type: none;
     margin: 0;
-    padding: 10;
+    padding: 0;
     background-color: #bbb;
     text-align: center;
 }
