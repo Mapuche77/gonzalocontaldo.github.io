@@ -68,7 +68,8 @@ function preload() {
 var fonts;
 var circles;
 function setup() {
-    createCanvas(800, 600);
+    let canvas = createCanvas(800, 600);
+    canvas.parent("sketch-holder");
     background(255);
     fill(0);
     

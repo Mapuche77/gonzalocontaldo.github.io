@@ -14,10 +14,6 @@ body {
     padding: 20px;
 }
 
-.animation {
-    margin: 20px 0;
-}
-
 #processingCanvas {
     width: 200px; 
     height: 200px;
