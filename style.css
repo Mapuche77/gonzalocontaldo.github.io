@@ -3,11 +3,11 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: #F5EEC8; /* Background color for the entire page */
+    background-color: #F1EFEF; /* Background color for the entire page */
 }
 
 .navbar {
-    background-color: #A7D397;
+    background-color: #CCC8AA;
     position: fixed;
     top: 0;
     left: 0;
