@@ -58,11 +58,11 @@ function createCirc(pos, radius) {
   
 var Arial, Bahnschrift, Lucida, Onyx, JhengHei;
 function preload() {
-    Arial = loadFont("FluffyFurr-Regular.otf");
-    Bahnschrift = loadFont("Dedicool.ttf");
-    Lucida = loadFont("BloodieCurse-Regular.otf");
-    Onyx = loadFont("Amorria-Brush.otf");
-    JhengHei = loadFont("Rutex.ttf");
+    Arial = loadFont("assets/FluffyFurr-Regular.otf");
+    Bahnschrift = loadFont("assets/Dedicool.ttf");
+    Lucida = loadFont("assets/BloodieCurse-Regular.otf");
+    Onyx = loadFont("assets/Amorria-Brush.otf");
+    JhengHei = loadFont("assets/Rutex.ttf");
 }
 
 var fonts;
