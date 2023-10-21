@@ -1,9 +1,9 @@
-/* Reset some default styles */
+
 body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: #F1EFEF; /* Background color for the entire page */
+    background-color: #F1EFEF; 
 }
 
 .navbar {
@@ -29,20 +29,21 @@ body {
 }
 
 .nav-links li {
-    margin-right: 20px;
+    margin-right: 50px;
+
 }
 
 .nav-links a {
     text-decoration: none;
-    color: #555843; /* Link text color */
+    color: #555843;
     font-weight: bold;
 }
 
 .header {
     margin-top: 100px;
     text-align: center;
-    background-color: #D0D4CA; /* Background color for the header */
-    padding: 20px; /* Adjust the padding as needed */
+    background-color: #D0D4CA; 
+    padding: 20px; 
 }
 
 #sketch-holder {
@@ -56,21 +57,21 @@ body {
 
 .projects h2 {
     font-size: 1.5em;
-    color: #555843; /* Header text color */
+    color: #555843; 
 }
 
 .bio {
     text-align: center;
-    margin-top: 20px; /* Background color for the bio section */
-    padding: 20px; /* Adjust the padding as needed */
+    margin-top: 20px; 
+    padding: 20px;
 }
 
 .bio h2 {
     font-size: 1.5em;
-    color: #555843; /* Header text color for the bio section */
+    color: #555843; 
 }
 
 .bio p {
     font-size: 1em;
-    color: #333; /* Text color for the bio section */
+    color: #333;
 }
