@@ -46,7 +46,7 @@ ul.navbar {
 
 ul.navbar li {
     display: inline;
-    margin-left: 20px; /* Add padding to the left of each item */
+    margin: 20px; /* Add padding to the left of each item */
 }
 
 ul.navbar li a {
