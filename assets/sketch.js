@@ -57,13 +57,13 @@ function createCirc(pos, radius) {
 }
   
 var Arial, Bahnschrift, Lucida, Onyx, JhengHei;
-function preload() {
-    Arial = loadFont("fonts/FluffyFurr-Regular.otf");
-    Bahnschrift = loadFont("fonts/Dedicool.ttf");
-    Lucida = loadFont("fonts/BloodieCurse-Regular.otf");
-    Onyx = loadFont("fonts/Amorria-Brush.otf");
-    JhengHei = loadFont("fonts/Rutex.ttf");
-}
+// function preload() {
+//     Arial = loadFont("fonts/FluffyFurr-Regular.otf");
+//     Bahnschrift = loadFont("fonts/Dedicool.ttf");
+//     Lucida = loadFont("fonts/BloodieCurse-Regular.otf");
+//     Onyx = loadFont("fonts/Amorria-Brush.otf");
+//     JhengHei = loadFont("fonts/Rutex.ttf");
+// }
 
 var fonts;
 var circles;
