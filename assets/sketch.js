@@ -68,6 +68,11 @@ var Arial, Bahnschrift, Lucida, Onyx, JhengHei;
 var fonts;
 var circles;
 function setup() {
+    Arial = loadFont("fonts/FluffyFurr-Regular.otf");
+    Bahnschrift = loadFont("fonts/Dedicool.ttf");
+    Lucida = loadFont("fonts/BloodieCurse-Regular.otf");
+    Onyx = loadFont("fonts/Amorria-Brush.otf");
+    JhengHei = loadFont("fonts/Rutex.ttf");
     let canvas = createCanvas(800, 600);
     canvas.parent("sketch-holder");
     background(255);
@@ -82,6 +87,7 @@ function setup() {
     }
     
     fonts = [Arial, Onyx, Bahnschrift , Lucida, JhengHei];
+
 }
 
 var idx;
