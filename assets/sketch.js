@@ -20,25 +20,25 @@ class Circles {
     if (this.pos.x + this.radius >= width){
       this.vel.x *= -1;
       this.pos.x = width - this.radius;
-      change_font();
+      // change_font();
     }
     
     if (this.pos.x - this.radius <= 0) {
       this.vel.x *= -1;
       this.pos.x = 0 + this.radius;
-      change_font();
+      // change_font();
     }
     
     if (this.pos.y + this.radius >= height) {
       this.vel.y *= -1;
       this.pos.y = height - this.radius;
-      change_text_color();
+      // change_text_color();
     }
     
     if (this.pos.y - this.radius <= 0){
       this.vel.y *= -1;
       this.pos.y = 0 + this.radius;
-      change_text_color();
+      // change_text_color();
     }
     
     fill(this.fill_color);
@@ -68,11 +68,6 @@ var Arial, Bahnschrift, Lucida, Onyx, JhengHei;
 var fonts;
 var circles;
 function setup() {
-    Arial = loadFont("fonts/FluffyFurr-Regular.otf");
-    Bahnschrift = loadFont("fonts/Dedicool.ttf");
-    Lucida = loadFont("fonts/BloodieCurse-Regular.otf");
-    Onyx = loadFont("fonts/Amorria-Brush.otf");
-    JhengHei = loadFont("fonts/Rutex.ttf");
     let canvas = createCanvas(800, 600);
     canvas.parent("sketch-holder");
     background(255);
@@ -101,28 +96,28 @@ function change_text_color() {
 }
 
 
-// function draw() {
-//   background(255);
+function draw() {
+  background(255);
   
-//   for (let n = 0; n < circles.length; n++) {
-//     circ = circles[n];
-//     // console.log('circles[n]');
-//     circ.drawself();
-//   }
+  for (let n = 0; n < circles.length; n++) {
+    circ = circles[n];
+    // console.log('circles[n]');
+    circ.drawself();
+  }
   
-//   fill(fill_color);
-//   textFont(fonts[idx]);
-//   textSize(50)
-//   textAlign(CENTER,CENTER);
-//   text(name, width/2, height/2);
-// }
+  fill(fill_color);
+  // textFont(fonts[idx]);
+  textSize(50)
+  textAlign(CENTER,CENTER);
+  text(name, width/2, height/2);
+}
 
-// function mousePressed() {
-//   radius = random(30,45)
-//   pos = createVector(mouseX, mouseY);
-//   createCirc(pos, radius);
-//   console.log("circle");
-// }
+function mousePressed() {
+  radius = random(30,45)
+  pos = createVector(mouseX, mouseY);
+  createCirc(pos, radius);
+  console.log("circle");
+}
 
 // function setup() {
 //   let canvas = createCanvas(400, 400);
