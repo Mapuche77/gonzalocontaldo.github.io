@@ -67,7 +67,7 @@ var fonts;
 // }
 
 function setup() {
-    let canvas = createCanvas(800, 600);
+    let canvas = createCanvas(windowWidth, 600);
     canvas.parent("sketch-holder");
     background(255);
     fill(0);
