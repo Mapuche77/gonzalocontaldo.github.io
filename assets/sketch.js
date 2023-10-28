@@ -42,7 +42,7 @@ class Circles {
     }
     
     fill(this.fill_color);
-    circle(this.pos.x, this.pos.y, this.radius*2);
+    circles(this.pos.x, this.pos.y, this.radius*2);
     
   }
 }
