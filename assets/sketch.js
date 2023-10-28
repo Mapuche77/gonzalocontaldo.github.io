@@ -101,7 +101,7 @@ function draw() {
   }
   
   fill(fill_color);
-  stroke(0,0,0)
+  stroke(255,255,255)
   strokeWeight(6)
   textSize(50);
   textAlign(CENTER, CENTER);
