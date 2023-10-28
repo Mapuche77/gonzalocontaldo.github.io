@@ -20,25 +20,25 @@ class Circles {
     if (this.pos.x + this.radius >= width){
       this.vel.x *= -1;
       this.pos.x = width - this.radius;
-      //change_font();
+      change_font();
     }
     
     if (this.pos.x - this.radius <= 0) {
       this.vel.x *= -1;
       this.pos.x = 0 + this.radius;
-      //change_font();
+      change_font();
     }
     
     if (this.pos.y + this.radius >= height) {
       this.vel.y *= -1;
       this.pos.y = height - this.radius;
-      // change_text_color();
+      change_text_color();
     }
     
     if (this.pos.y - this.radius <= 0){
       this.vel.y *= -1;
       this.pos.y = 0 + this.radius;
-      // change_text_color();
+      change_text_color();
     }
     
     fill(this.fill_color);
