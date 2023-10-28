@@ -94,7 +94,7 @@ function change_text_color() {
 
 function draw() {
   // background(255);
-  
+  strokeWeight(1)
   for (let n = 0; n < circlesArray.length; n++) {
     circ = circlesArray[n];
     circ.drawself();
@@ -102,7 +102,7 @@ function draw() {
   
   fill(fill_color);
   stroke(0,0,0)
-  strokeWeight(10)
+  strokeWeight(6)
   textSize(50);
   textAlign(CENTER, CENTER);
   text(namestr, width / 2, height / 2);
