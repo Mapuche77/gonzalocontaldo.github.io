@@ -55,9 +55,27 @@ body {
     margin-top: 20px;
 }
 
-.projects h2 {
-    font-size: 1.5em;
-    color: #555843; 
+.project-holder{
+    border: 1px solid black;
+    margin: 1rem;
+    padding: 2rem 2rem;
+    text-align: center; 
+}
+
+.project-child{
+    display: inline-block;
+    padding: 1rem 1rem;
+    vertical-align: middle;
+}
+
+.project-title{
+    text-align: center;
+    color: #555843;
+}
+
+.project-desc{
+    text-align: center;
+    text-justify: auto;
 }
 
 #sketch-holder {
