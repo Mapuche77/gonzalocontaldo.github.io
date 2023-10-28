@@ -3,7 +3,7 @@ var initialCircles = 5;
 var circlesArray = []; 
 var namestr = "GONZALO CONTALDO";
 var idx = 0;
-var fill_color; // 
+var fill_color = (0, 0, 0);
 
 class Circles {
   constructor(pos, vel, radius, fill_color) {
