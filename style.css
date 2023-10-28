@@ -58,22 +58,7 @@ body {
 .projects h2 {
     font-size: 1.5em;
     color: #555843; 
-}
-
-.bio {
-    text-align: center;
-    margin-top: 20px; 
-    padding: 20px;
-}
-
-.bio h2 {
-    font-size: 1.5em;
-    color: #555843; 
-}
-
-.bio p {
-    font-size: 1em;
-    color: #333;
+    text-align: left;
 }
 
 #sketch-holder {
