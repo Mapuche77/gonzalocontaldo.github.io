@@ -101,6 +101,8 @@ function draw() {
   }
   
   fill(fill_color);
+  stroke(0,0,0)
+  strokeWeight(10)
   textSize(50);
   textAlign(CENTER, CENTER);
   text(namestr, width / 2, height / 2);
