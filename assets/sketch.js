@@ -1,7 +1,7 @@
 var gravity = 0;
 var initialCircles = 5;
 var circles = [];
-var name = "GONZALO CONTALDO";
+var namestr = "GONZALO CONTALDO";
 var idx = 0;
 var fill_color = (0, 0, 0);
 
@@ -109,7 +109,7 @@ function draw() {
   // textFont(fonts[idx]);
   textSize(50)
   textAlign(CENTER,CENTER);
-  text(name, width/2, height/2);
+  text(namestr, width/2, height/2);
 }
 
 function mousePressed() {
