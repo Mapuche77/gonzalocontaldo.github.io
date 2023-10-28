@@ -75,3 +75,7 @@ body {
     font-size: 1em;
     color: #333;
 }
+
+#sketch-holder {
+    overflow: hidden;
+  }
