@@ -1,9 +1,9 @@
 var gravity = 0;
 var initialCircles = 5;
-var circles = [];
+var circlesArray = []; // Renamed 'circles' array variable to avoid conflict
 var namestr = "GONZALO CONTALDO";
 var idx = 0;
-var fill_color = (0, 0, 0);
+var fill_color; // Modified to be set as a valid color
 
 class Circles {
   constructor(pos, vel, radius, fill_color) {
@@ -14,36 +14,31 @@ class Circles {
   }
   
   drawself() {
-    this.vel.y+=gravity;
+    this.vel.y += gravity;
     this.pos.add(this.vel);
     
     if (this.pos.x + this.radius >= width){
       this.vel.x *= -1;
       this.pos.x = width - this.radius;
-      // change_font();
     }
     
     if (this.pos.x - this.radius <= 0) {
       this.vel.x *= -1;
       this.pos.x = 0 + this.radius;
-      // change_font();
     }
     
     if (this.pos.y + this.radius >= height) {
       this.vel.y *= -1;
       this.pos.y = height - this.radius;
-      // change_text_color();
     }
     
     if (this.pos.y - this.radius <= 0){
       this.vel.y *= -1;
       this.pos.y = 0 + this.radius;
-      // change_text_color();
     }
     
-    fill(this.fill_color);
-    circles(this.pos.x, this.pos.y, this.radius*2);
-    
+    fill(this.fill_color[0], this.fill_color[1], this.fill_color[2]); // Modify fill function
+    ellipse(this.pos.x, this.pos.y, this.radius * 2);
   }
 }
 
@@ -51,29 +46,29 @@ function createCirc(pos, radius) {
     vel = createVector(random(-5, 5), random(-5, 5));
     rgb = [random(0, 255), random(0, 255), random(0, 255)];
   
-  
-  circ = new Circles(pos, vel, radius, rgb);
-  circles.push(circ);
+    circ = new Circles(pos, vel, radius, rgb);
+    circlesArray.push(circ);
 }
   
 var Arial, Bahnschrift, Lucida, Onyx, JhengHei;
-// function preload() {
-//     Arial = loadFont("fonts/FluffyFurr-Regular.otf");
-//     Bahnschrift = loadFont("fonts/Dedicool.ttf");
-//     Lucida = loadFont("fonts/BloodieCurse-Regular.otf");
-//     Onyx = loadFont("fonts/Amorria-Brush.otf");
-//     JhengHei = loadFont("fonts/Rutex.ttf");
-// }
+// Load fonts in preload function
 
 var fonts;
-var circles;
+function preload() {
+    Arial = loadFont("fonts/FluffyFurr-Regular.otf");
+    Bahnschrift = loadFont("fonts/Dedicool.ttf");
+    Lucida = loadFont("fonts/BloodieCurse-Regular.otf");
+    Onyx = loadFont("fonts/Amorria-Brush.otf");
+    JhengHei = loadFont("fonts/Rutex.ttf");
+}
+
 function setup() {
     let canvas = createCanvas(800, 600);
     canvas.parent("sketch-holder");
     background(255);
     fill(0);
     
-    for (let i=0; i < initialCircles; i++) {
+    for (let i = 0; i < initialCircles; i++) {
         radius = random(30, 45);
         posX = random(0 + radius, width - radius);
         posY = random(0 + radius, height - radius);
@@ -81,43 +76,38 @@ function setup() {
         createCirc(pos, radius);
     }
     
-    fonts = [Arial, Onyx, Bahnschrift , Lucida, JhengHei];
-
+    fonts = [Arial, Onyx, Bahnschrift, Lucida, JhengHei];
 }
 
 var idx;
 function change_font() {
-  idx = (idx+1) % fonts.length;
+  idx = (idx + 1) % fonts.length;
 }
 
-var fill_color;
 function change_text_color() {
-  fill_color = [random(0,255), random(0,255), random(0,255)];
+  fill_color = [random(0, 255), random(0, 255), random(0, 255)];
 }
-
 
 function draw() {
   background(255);
   
-  for (let n = 0; n < circles.length; n++) {
-    circ = circles[n];
-    // console.log('circles[n]');
+  for (let n = 0; n < circlesArray.length; n++) {
+    circ = circlesArray[n];
     circ.drawself();
   }
   
   fill(fill_color);
-  // textFont(fonts[idx]);
-  textSize(50)
-  textAlign(CENTER,CENTER);
-  text(namestr, width/2, height/2);
+  textSize(50);
+  textAlign(CENTER, CENTER);
+  text(namestr, width / 2, height / 2);
 }
 
 function mousePressed() {
-  radius = random(30,45)
+  radius = random(30, 45);
   pos = createVector(mouseX, mouseY);
   createCirc(pos, radius);
-  console.log("circle");
 }
+
 
 // function setup() {
 //   let canvas = createCanvas(400, 400);
