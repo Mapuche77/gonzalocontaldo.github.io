@@ -1,9 +1,9 @@
 var gravity = 0;
 var initialCircles = 5;
-var circlesArray = []; // Renamed 'circles' array variable to avoid conflict
+var circlesArray = []; 
 var namestr = "GONZALO CONTALDO";
 var idx = 0;
-var fill_color; // Modified to be set as a valid color
+var fill_color; // 
 
 class Circles {
   constructor(pos, vel, radius, fill_color) {
@@ -37,7 +37,7 @@ class Circles {
       this.pos.y = 0 + this.radius;
     }
     
-    fill(this.fill_color[0], this.fill_color[1], this.fill_color[2]); // Modify fill function
+    fill(this.fill_color[0], this.fill_color[1], this.fill_color[2]); 
     ellipse(this.pos.x, this.pos.y, this.radius * 2);
   }
 }
