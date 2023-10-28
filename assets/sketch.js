@@ -89,7 +89,7 @@ function change_text_color() {
 }
 
 function draw() {
-  background(255);
+  // background(255);
   
   for (let n = 0; n < circlesArray.length; n++) {
     circ = circlesArray[n];
