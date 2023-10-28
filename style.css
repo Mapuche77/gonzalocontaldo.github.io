@@ -65,7 +65,7 @@ body {
 .project-child{
     display: inline-block;
     padding: 1rem 1rem;
-    
+    vertical-align: middle;
     border: 1px solid red;
 }
 
