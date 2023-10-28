@@ -1,9 +1,9 @@
-gravity = 0;
-initialCircles = 5;
-circles = [];
+var gravity = 0;
+var initialCircles = 5;
+var circles = [];
 var name = "GONZALO CONTALDO";
-idx = 0;
-fill_color = (0, 0, 0);
+var idx = 0;
+var fill_color = (0, 0, 0);
 
 class Circles {
   constructor(pos, vel, radius, fill_color) {
