@@ -1,7 +1,7 @@
 gravity = 0;
 initialCircles = 5;
 circles = [];
-name = "GONZALO CONTALDO";
+var name = "GONZALO CONTALDO";
 idx = 0;
 fill_color = (0, 0, 0);
 
