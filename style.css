@@ -106,12 +106,3 @@ body {
     width: 30px; /* Adjust the size as needed */
     height: auto;
 }
-
-.gmail a {
-    color: #fff;
-    text-decoration: none;
-}
-
-.gmail a:hover {
-    text-decoration: underline;
-}
