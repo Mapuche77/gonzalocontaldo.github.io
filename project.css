@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  
+.navbar {
+    background-color: #CCC8AA;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    z-index: 1;
+}
+.navbar .logo img {
+    width: 50px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 50px;
+
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #555843;
+    font-weight: bold;
+}
+
+
+
+
+.container {
+    margin: auto;
+    max-width: 1200px;
+    padding: 20px;
+  }
+  
+.title {
+    font-size: 5em;
+    margin-bottom: 20px;
+  }
+  
+.subtitle {
+    font-size: 1.5em;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+  
+.paragraph {
+    margin-bottom: 15px;
+    line-height: 1.5;
+  }
+
+
+
+
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.social-media a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.social-media img {
+    width: 30px; /* Adjust the size as needed */
+    height: auto;
+}
+
+.gmail {
+    margin-top: 15px;
+}
