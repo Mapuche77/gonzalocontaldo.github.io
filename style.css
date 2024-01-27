@@ -73,6 +73,7 @@ body {
     flex: 1;
     padding: 1rem 1rem;
     vertical-align: middle;
+    width: 50%;
 }
 
 .project-title{
