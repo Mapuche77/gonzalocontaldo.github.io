@@ -69,10 +69,11 @@ body {
     font-size: larger;
 }
 
-.project-child{
+.project-child-img{
     flex: 1;
     padding: 1rem 1rem;
     vertical-align: middle;
+    width: 50%;
 }
 
 .project-title{
@@ -110,3 +111,4 @@ body {
 .gmail {
     margin-top: 15px;
 }
+
