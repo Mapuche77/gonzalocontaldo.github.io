@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,32 +26,56 @@
     <div class="container">
         <h1 class="title">Little Weather App Project</h1>
 
+        <img src="images/project.png">
         <h2 class="subtitle">Embarking on my first solo Python project</h2>
-        <p class="paragraph">I set out with a clear goal in mind: to dive headfirst into the world of programming and build something practical from scratch. The project took shape as a nifty little weather app, crafted using a blend of web scraping and Tkinter, Python's graphical user interface library. My aim was twofold: firstly, to apply the coding concepts I'd been learning and, secondly, to create a real-world tool that could fetch and display up-to-the-minute weather information at my fingertips. In the process, I struggled with data retrieval from websites, honed my problem-solving skills, and tried to make something similar to a user-friendly interface.</p>
+        <p class="paragraph">I set out with a clear goal in mind: to dive headfirst into the world of programming and
+            build something practical from scratch. The project took shape as a nifty little weather app, crafted using
+            a blend of web scraping and Tkinter, Python's graphical user interface library. My aim was twofold: firstly,
+            to apply the coding concepts I'd been learning and, secondly, to create a real-world tool that could fetch
+            and display up-to-the-minute weather information at my fingertips. In the process, I struggled with data
+            retrieval from websites, honed my problem-solving skills, and tried to make something similar to a
+            user-friendly interface.</p>
 
         <h3 class="subtitle">What skills did I need to use?</h3>
-            <ul class="skill-list">
-                <li><strong>API Integration:</strong> I used the OpenWeatherMap API to fetch data based on user input.</li>
-                <li><strong>Web Scraping:</strong> Using the ‘requests’ library to send an HTTP GET request to the API and retrieve weather data in JSON format</li>
-                <li><strong>Graphical User Interface (GUI):</strong> I worked with the ‘tkinter’ library to create the labels, buttons and frames to design the interface.</li>
-                <li><strong>Error Handling:</strong> I implemented a way of handling an error by checking the HTTP response status and displaying the error message if it failed.</li>
-                <li><strong>Data Manipulation:</strong> With all the information in the JSON file, I accessed and used just the ones I found important.</li>
-                <li><strong>Data Formatting:</strong> For example in the temperature data by changing fahrenheit to celsius or managing time.</li>
-                <li><strong>Time Handling:</strong> Used the ‘time’ module to get the current time and adjusted it based on the city’s time zone.</li>
-                <li><strong>Layout Management:</strong> By organizing my GUI layout using grid and pack.</li>
-                <li><strong>Object-Oriented Programming:</strong> I structured the code using a class-based approach.</li>
-            </ul>
+        <ul class="skill-list">
+            <li><strong>API Integration:</strong> I used the OpenWeatherMap API to fetch data based on user input.</li>
+            <li><strong>Web Scraping:</strong> Using the ‘requests’ library to send an HTTP GET request to the API and
+                retrieve weather data in JSON format</li>
+            <li><strong>Graphical User Interface (GUI):</strong> I worked with the ‘tkinter’ library to create the
+                labels, buttons and frames to design the interface.</li>
+            <li><strong>Error Handling:</strong> I implemented a way of handling an error by checking the HTTP response
+                status and displaying the error message if it failed.</li>
+            <li><strong>Data Manipulation:</strong> With all the information in the JSON file, I accessed and used just
+                the ones I found important.</li>
+            <li><strong>Data Formatting:</strong> For example in the temperature data by changing fahrenheit to celsius
+                or managing time.</li>
+            <li><strong>Time Handling:</strong> Used the ‘time’ module to get the current time and adjusted it based on
+                the city’s time zone.</li>
+            <li><strong>Layout Management:</strong> By organizing my GUI layout using grid and pack.</li>
+            <li><strong>Object-Oriented Programming:</strong> I structured the code using a class-based approach.</li>
+        </ul>
 
         <h3 class="subtitle">Code</h3>
         <ol>
             <li>I set up a basic window configuration</li>
-            <li>In this function firstly I created the URL for accessing the API to then do the web scraping. With the data I got as a response I asked for each piece of information required and gave them the proper format, For example; with the citytime I needed to divide the number the page gave me by 3600(1 hour expressed in seconds) and then add it to the base time. After that, I add the current time in minutes by accessing the index 4 of the gmtime tuple.
-                Lastly, I created each label and set them so that I could use them outside of the function by using the benefits of working with classes</li>
-            <li>In this function I defined how the user interface layout was going to look, I added some rows and columns to work with a grid format where on the first row I added the search bar functionality (which contains a label, entry and a button all inside a frame). Everything after it is just the information I got before being displayed so they are just labels with their proper font.</li>
+            <li>In this function firstly I created the URL for accessing the API to then do the web scraping. With the
+                data I got as a response I asked for each piece of information required and gave them the proper format,
+                For example; with the citytime I needed to divide the number the page gave me by 3600(1 hour expressed
+                in seconds) and then add it to the base time. After that, I add the current time in minutes by accessing
+                the index 4 of the gmtime tuple.
+                Lastly, I created each label and set them so that I could use them outside of the function by using the
+                benefits of working with classes</li>
+            <li>In this function I defined how the user interface layout was going to look, I added some rows and
+                columns to work with a grid format where on the first row I added the search bar functionality (which
+                contains a label, entry and a button all inside a frame). Everything after it is just the information I
+                got before being displayed so they are just labels with their proper font.</li>
         </ol>
 
         <h3 class="subtitle">What would I do differently?</h3>
-        <p class="paragraph">Well, if I were to start all over again, I would definitely structure the code in another way in order to make it more readable, maybe by separating it into different functions. Another thing I would like to improve is the design of the interface as I'm not satisfied with the result, maybe in my spare time I can dedicate some to doing so.</p>
+        <p class="paragraph">Well, if I were to start all over again, I would definitely structure the code in another
+            way in order to make it more readable, maybe by separating it into different functions. Another thing I
+            would like to improve is the design of the interface as I'm not satisfied with the result, maybe in my spare
+            time I can dedicate some to doing so.</p>
     </div>
 </body>
 
@@ -58,8 +83,10 @@
     <div class="social-media">
         <h1>Contact Me</h1>
         <a href="https://twitter.com/GonzaContaldo" target="_blank"><img src="assets/x-icon.png" alt="X"></a>
-        <a href="https://www.instagram.com/gonzacontaldo/?hl=es#" target="_blank"><img src="assets/instagram-icon.png" alt="Instagram"></a>
+        <a href="https://www.instagram.com/gonzacontaldo/?hl=es#" target="_blank"><img src="assets/instagram-icon.png"
+                alt="Instagram"></a>
     </div>
     <a class="gmail">gonzacontaldo@gmail.com</a>
 </footer>
+
 </html>
