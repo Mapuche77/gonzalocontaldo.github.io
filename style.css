@@ -69,12 +69,10 @@ body {
     font-size: larger;
 }
 
-.project-child-img{
+.project-child{
     flex: 1;
     padding: 1rem 1rem;
     vertical-align: middle;
-    width: 50%;
-    height: auto;
 }
 
 .project-title{
