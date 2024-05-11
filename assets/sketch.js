@@ -48,7 +48,7 @@ class Circles {
 
 function createCirc(pos, radius) {
     vel = createVector(random(-5, 5), random(-5, 5));
-    rgb = [random(0, 255), random(0, 255), random(0, 255)];
+    rgb = [random(200, 255), random(200, 255), random(150, 255)];
   
     circ = new Circles(pos, vel, radius, rgb);
     circlesArray.push(circ);
@@ -89,7 +89,7 @@ function change_font() {
 }
 
 function change_text_color() {
-  fill_color = [random(0, 255), random(0, 255), random(0, 255)];
+  fill_color = [random(0, 50), random(0, 50), random(0, 75)];
 }
 
 function draw() {
